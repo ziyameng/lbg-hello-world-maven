@@ -8,8 +8,7 @@ pipeline{
     stages{
         stage('build'){
             steps{
-                sh 'bash setup.sh'
-                sh 'ls'
+                sh 'mvn clean compile'
             }
         }
         stage('test'){
